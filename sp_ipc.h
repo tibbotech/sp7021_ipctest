@@ -154,9 +154,9 @@ do { \
 		_j = _i & 0x0F; \
 		sprintf(ss + _j * 3, "%02x%c", _p[_i], _s[_j]); \
 		_i++; \
-		if (!(_i & 0x0F)) printf(ss); \
+		if (!(_i & 0x0F)) printf("%s",ss); \
 	} \
-	if (_l & 0x0F) printf(ss); \
+	if (_l & 0x0F) printf("%s",ss); \
 } while (0)
 
 #define var_dump(v) \
