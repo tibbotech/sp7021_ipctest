@@ -5,10 +5,10 @@ CC = $(CROSS_COMPILE)gcc
 OUT := sp_ipc_test
 
 all: sp_ipc_test.o
-	$(CC) -o $(OUT) $^
+	$(CC) -O -o $(OUT) $^
 
 %.o: %.c
-	$(CC) -c -o $@ $<
+	$(CC) -O -c -o $@ $<
 
 clean:
 	@rm -f *.o $(OUT)

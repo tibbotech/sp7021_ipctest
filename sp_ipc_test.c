@@ -5,6 +5,7 @@
 #include <errno.h>
 #include <string.h>
 #include <time.h>
+#include <sys/ioctl.h>
 #include <pthread.h>
 #include "gp_chunkmem.h"
 #include "gp_cache.h"
